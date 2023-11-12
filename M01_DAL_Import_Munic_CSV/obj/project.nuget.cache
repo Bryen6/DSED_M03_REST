@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "5OpNmXrd6FTb55F/tVNY421g3G43kVYZLJATBRF6LrF5Htl8aNa7Eiy3ui2DbJHSs/IZlp9+hwpCFJDl3qZRXA==",
+  "success": true,
+  "projectFilePath": "C:\\Session 4\\DEV\\DSED_M03_REST01\\M01_DAL_Import_Munic_CSV\\M01_DAL_Import_Munic_CSV.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bryen\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

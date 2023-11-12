@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\M01_DAL_Import_Munic_CSV\M01_DAL_Import_Munic_CSV.csproj" />
+    <ProjectReference Include="..\M01_DAL_Import_Munic_JSON\M01_DAL_Import_Munic_JSON.csproj" />
+    <ProjectReference Include="..\M01_DAL_Import_Munic_REST_JSON\M01_DAL_Import_Munic_REST_JSON.csproj" />
+    <ProjectReference Include="..\M01_DAL_Municipalite_SQLServer\M01_DAL_Municipalite_SQLServer.csproj" />
+    <ProjectReference Include="..\M01_Srv_Municipalite\M01_Srv_Municipalite.csproj" />
+  </ItemGroup>
+
+</Project>

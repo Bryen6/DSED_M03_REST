@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-DSED_M03_REST01-cafd6aa3-1ca5-4329-9aa9-2db2c91b5306</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\apim\**" />
+    <Compile Remove="Data\dalm\**" />
+    <Content Remove="Data\apim\**" />
+    <Content Remove="Data\dalm\**" />
+    <EmbeddedResource Remove="Data\apim\**" />
+    <EmbeddedResource Remove="Data\dalm\**" />
+    <None Remove="Data\apim\**" />
+    <None Remove="Data\dalm\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="30.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.15" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.15" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.24" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.15" />
+    <PackageReference Include="NSwag.AspNetCore" Version="13.20.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\M01_DAL_Municipalite_SQLServer\M01_DAL_Municipalite_SQLServer.csproj" />
+    <ProjectReference Include="..\M01_Srv_Municipalite\M01_Srv_Municipalite.csproj" />
+  </ItemGroup>
+
+</Project>
