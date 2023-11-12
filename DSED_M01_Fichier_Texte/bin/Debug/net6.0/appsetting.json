@@ -1,5 +1,0 @@
-{
-  "ConnectionStrings": {
-    "DBConnection": "Server=.\\sqlexpress;Database=municipalites;Trusted_Connection=True;MultipleActiveResultSets=true"
-  }
-}

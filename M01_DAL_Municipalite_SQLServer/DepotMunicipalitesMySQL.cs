@@ -81,11 +81,14 @@ namespace M01_DAL_Municipalite_SQLServer
             IQueryable<Municipalite> requete = this.m_context.MUNICIPALITES;
             Municipalite municipaliteCherchee = requete.SingleOrDefault(m => m.MunicipaliteID == p_municipalite.CodeGeographique);
 
-            if (municipaliteCherchee is not null && municipaliteCherchee.Actif == false)
+            if (municipaliteCherchee is not null)
             {
+                municipaliteCherchee.NomMunicipalite = p_municipalite.NomMunicipalite;
+                municipaliteCherchee.AdresseCourriel = p_municipalite.AdresseCourriel;
+                municipaliteCherchee.AdresseWeb = p_municipalite.AdresseWeb;
+                municipaliteCherchee.DateProchaineElection = p_municipalite.DateProchaineElection;
                 municipaliteCherchee.Actif = true;
                 this.m_context.SaveChanges();
-                this.m_context.ChangeTracker.Clear();
             }
         }
     }

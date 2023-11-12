@@ -4,6 +4,7 @@ using DSED_M03_REST01.Models;
 using M01_Srv_Municipalite;
 using MunicipaliteModel = DSED_M03_REST01.Models.MunicipaliteModel;
 using MunicipaliteSRVM = M01_Srv_Municipalite.Municipalite;
+using Newtonsoft.Json;
 
 namespace DSED_M03_REST01.Controllers
 {
